@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Nova IA - Inteligencia Artificial moderna, elegante y potente." />
+  <meta name="theme-color" content="#0a0a0f" />
+  <title>Nova IA — Inteligencia Artificial</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#inicio" class="logo" aria-label="Nova IA">
+        <div class="logo-icon">
+          <i data-lucide="sparkles"></i>
+        </div>
+        <span>Nova <strong>IA</strong></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio" class="nav-link active" data-i18n="nav.home">Inicio</a>
+        <a href="#funciones" class="nav-link" data-i18n="nav.features">Funciones</a>
+        <a href="#herramientas" class="nav-link" data-i18n="nav.tools">Herramientas</a>
+        <a href="#descargar" class="nav-link" data-i18n="nav.download">Descargar</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language Toggle -->
+        <button class="lang-toggle" id="langToggle" aria-label="Change language">
+          <span id="langLabel">ES</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+          <i data-lucide="moon" id="themeIcon"></i>
+        </button>
+
+        <a href="#descargar" class="btn btn-primary btn-sm desktop-only" data-i18n="nav.downloadBtn">Descargar APK</a>
+        
+        <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <a href="#inicio" class="mobile-link" data-i18n="nav.home">Inicio</a>
+      <a href="#funciones" class="mobile-link" data-i18n="nav.features">Funciones</a>
+      <a href="#herramientas" class="mobile-link" data-i18n="nav.tools">Herramientas</a>
+      <a href="#descargar" class="mobile-link" data-i18n="nav.download">Descargar</a>
+      <a href="https://www.mediafire.com/file/sgjskek9e4c2ar8/nova_ai_10.apk/file" 
+         class="btn btn-primary btn-block" 
+         target="_blank" 
+         rel="noopener"
+         data-i18n="nav.downloadBtn">
+        Descargar APK
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="badge animate-fade-up">
+          <i data-lucide="zap"></i>
+          <span data-i18n="hero.badge">Nueva generación de IA</span>
+        </div>
+
+        <h1 class="hero-title animate-fade-up delay-1">
+          <span data-i18n="hero.title1">Inteligencia Artificial</span><br />
+          <span class="gradient-text" data-i18n="hero.title2">elegante y poderosa</span>
+        </h1>
+
+        <p class="hero-subtitle animate-fade-up delay-2" data-i18n="hero.subtitle">
+          Nova IA es tu compañera inteligente. Diseñada para ser rápida, intuitiva y visualmente impecable. Todo el poder de la IA en una experiencia premium.
+        </p>
+
+        <div class="hero-actions animate-fade-up delay-3">
+          <a href="https://www.mediafire.com/file/sgjskek9e4c2ar8/nova_ai_10.apk/file" 
+             class="btn btn-primary btn-lg" 
+             target="_blank" 
+             rel="noopener"
+             id="downloadBtn">
+            <i data-lucide="download"></i>
+            <span data-i18n="hero.download">Descargar APK</span>
+          </a>
+          <a href="#funciones" class="btn btn-secondary btn-lg">
+            <i data-lucide="play"></i>
+            <span data-i18n="hero.explore">Explorar</span>
+          </a>
+        </div>
+
+        <div class="hero-stats animate-fade-up delay-4">
+          <div class="stat">
+            <span class="stat-number">10+</span>
+            <span class="stat-label" data-i18n="hero.stat1">Herramientas</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-i18n="hero.stat2num">Rápida</span>
+            <span class="stat-label" data-i18n="hero.stat2">Respuesta</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-i18n="hero.stat3num">Premium</span>
+            <span class="stat-label" data-i18n="hero.stat3">Diseño</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Funciones -->
+    <section class="section" id="funciones">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="features.tag">Funciones</span>
+          <h2 class="section-title" data-i18n="features.title">Diseñada para destacar</h2>
+          <p class="section-desc" data-i18n="features.desc">Una experiencia cuidada hasta el último detalle. Minimalista, rápida y elegante.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon"><i data-lucide="message-square"></i></div>
+            <h3 data-i18n="features.card1.title">Conversaciones fluidas</h3>
+            <p data-i18n="features.card1.desc">Chatea de forma natural con una interfaz limpia y respuestas rápidas.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon"><i data-lucide="sparkles"></i></div>
+            <h3 data-i18n="features.card2.title">Herramientas de IA</h3>
+            <p data-i18n="features.card2.desc">Accede a un conjunto de herramientas útiles pensadas para el día a día.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon"><i data-lucide="palette"></i></div>
+            <h3 data-i18n="features.card3.title">Diseño premium</h3>
+            <p data-i18n="features.card3.desc">Tema oscuro elegante, animaciones suaves y una experiencia visual cuidada.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon"><i data-lucide="smartphone"></i></div>
+            <h3 data-i18n="features.card4.title">Optimizada para móvil</h3>
+            <p data-i18n="features.card4.desc">Funciona de forma fluida en cualquier dispositivo Android.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon"><i data-lucide="shield"></i></div>
+            <h3 data-i18n="features.card5.title">Privacidad primero</h3>
+            <p data-i18n="features.card5.desc">Tu información se trata con cuidado. Diseño centrado en la experiencia del usuario.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon"><i data-lucide="zap"></i></div>
+            <h3 data-i18n="features.card6.title">Rendimiento ágil</h3>
+            <p data-i18n="features.card6.desc">Interfaz ligera y respuestas rápidas para que no pierdas el ritmo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Herramientas -->
+    <section class="section section-alt" id="herramientas">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="tools.tag">Herramientas</span>
+          <h2 class="section-title" data-i18n="tools.title">Potencia tu productividad</h2>
+          <p class="section-desc" data-i18n="tools.desc">Un conjunto de herramientas de IA listas para usar desde la aplicación.</p>
+        </div>
+
+        <div class="tools-grid">
+          <div class="tool-card">
+            <div class="tool-icon"><i data-lucide="bot"></i></div>
+            <div>
+              <h4 data-i18n="tools.t1.title">Asistente de chat</h4>
+              <p data-i18n="tools.t1.desc">Conversaciones inteligentes y contextuales.</p>
+            </div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><i data-lucide="file-text"></i></div>
+            <div>
+              <h4 data-i18n="tools.t2.title">Escritura y resúmenes</h4>
+              <p data-i18n="tools.t2.desc">Ayuda a redactar, resumir y mejorar textos.</p>
+            </div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><i data-lucide="image"></i></div>
+            <div>
+              <h4 data-i18n="tools.t3.title">Ideas creativas</h4>
+              <p data-i18n="tools.t3.desc">Genera ideas, títulos y conceptos creativos.</p>
+            </div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><i data-lucide="code"></i></div>
+            <div>
+              <h4 data-i18n="tools.t4.title">Ayuda con código</h4>
+              <p data-i18n="tools.t4.desc">Explicaciones y sugerencias para programadores.</p>
+            </div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><i data-lucide="languages"></i></div>
+            <div>
+              <h4 data-i18n="tools.t5.title">Traducción</h4>
+              <p data-i18n="tools.t5.desc">Traduce textos de forma rápida y natural.</p>
+            </div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><i data-lucide="lightbulb"></i></div>
+            <div>
+              <h4 data-i18n="tools.t6.title">Brainstorming</h4>
+              <p data-i18n="tools.t6.desc">Explora ideas y resuelve problemas creativamente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Descargar -->
+    <section class="section download-section" id="descargar">
+      <div class="container">
+        <div class="download-card">
+          <div class="download-content">
+            <div class="download-badge">
+              <i data-lucide="smartphone"></i>
+              <span data-i18n="download.badge">Disponible para Android</span>
+            </div>
+            <h2 data-i18n="download.title">Lleva Nova IA contigo</h2>
+            <p data-i18n="download.desc">Descarga la APK e instálala en tu dispositivo. Experiencia completa, sin complicaciones.</p>
+            
+            <div class="download-actions">
+              <a href="https://www.mediafire.com/file/sgjskek9e4c2ar8/nova_ai_10.apk/file" 
+                 class="btn btn-primary btn-lg"
+                 target="_blank" 
+                 rel="noopener"
+                 id="mainDownload">
+                <i data-lucide="download"></i>
+                <span data-i18n="download.btn">Descargar APK</span>
+              </a>
+              <span class="download-note" data-i18n="download.note">Versión actual • MediaFire</span>
+            </div>
+          </div>
+
+          <div class="download-visual">
+            <div class="phone-mockup">
+              <div class="phone-screen">
+                <div class="phone-header">
+                  <div class="phone-logo">Nova IA</div>
+                </div>
+                <div class="phone-chat">
+                  <div class="bubble user" data-i18n="download.chat1">Hola Nova 👋</div>
+                  <div class="bubble ai" data-i18n="download.chat2">¡Hola! ¿En qué puedo ayudarte hoy?</div>
+                  <div class="bubble user" data-i18n="download.chat3">Muéstrame tus herramientas</div>
+                  <div class="bubble ai" data-i18n="download.chat4">Claro, aquí tienes todo lo que puedo hacer…</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#inicio" class="logo">
+            <div class="logo-icon"><i data-lucide="sparkles"></i></div>
+            <span>Nova <strong>IA</strong></span>
+          </a>
+          <p data-i18n="footer.tagline">Inteligencia Artificial moderna y elegante.</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <h5 data-i18n="footer.nav">Navegación</h5>
+            <a href="#inicio" data-i18n="nav.home">Inicio</a>
+            <a href="#funciones" data-i18n="nav.features">Funciones</a>
+            <a href="#herramientas" data-i18n="nav.tools">Herramientas</a>
+            <a href="#descargar" data-i18n="nav.download">Descargar</a>
+          </div>
+          <div class="footer-col">
+            <h5 data-i18n="footer.download">Descarga</h5>
+            <a href="https://www.mediafire.com/file/sgjskek9e4c2ar8/nova_ai_10.apk/file" target="_blank" rel="noopener">APK Android</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Nova IA. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+        <p class="footer-note" data-i18n="footer.made">Hecho con atención al detalle.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
