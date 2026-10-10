@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="description" content="Nova IA - Inteligencia Artificial moderna, elegante y potente." />
+  <meta name="description" content="Nova IA - Inteligencia Artificial segura, moderna y potente." />
   <meta name="theme-color" content="#0a0a0f" />
-  <title>Nova IA — Inteligencia Artificial</title>
+  <title>Nova IA — Inteligencia Artificial Segura</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,43 +15,37 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Toast -->
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <!-- Navbar -->
   <header class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#inicio" class="logo" aria-label="Nova IA">
-        <div class="logo-icon">
-          <i data-lucide="sparkles"></i>
-        </div>
+      <a href="#inicio" class="logo">
+        <img src="https://i.imgur.com/wzJeLBt.png" alt="Nova IA" class="logo-img" />
         <span>Nova <strong>IA</strong></span>
       </a>
 
-      <nav class="nav-links" id="navLinks">
+      <nav class="nav-links">
         <a href="#inicio" class="nav-link active" data-i18n="nav.home">Inicio</a>
         <a href="#funciones" class="nav-link" data-i18n="nav.features">Funciones</a>
         <a href="#herramientas" class="nav-link" data-i18n="nav.tools">Herramientas</a>
+        <a href="#seguridad" class="nav-link" data-i18n="nav.security">Seguridad</a>
         <a href="#descargar" class="nav-link" data-i18n="nav.download">Descargar</a>
       </nav>
 
       <div class="nav-actions">
-        <!-- Language Toggle -->
         <button class="lang-toggle" id="langToggle" aria-label="Change language">
           <span id="langLabel">ES</span>
         </button>
 
-        <!-- Theme Toggle -->
         <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
-          <i data-lucide="moon" id="themeIcon"></i>
+          <span id="themeIcon">☀️</span>
         </button>
 
         <a href="#descargar" class="btn btn-primary btn-sm desktop-only" data-i18n="nav.downloadBtn">Descargar APK</a>
         
         <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </button>
       </div>
     </div>
@@ -63,12 +57,10 @@
       <a href="#inicio" class="mobile-link" data-i18n="nav.home">Inicio</a>
       <a href="#funciones" class="mobile-link" data-i18n="nav.features">Funciones</a>
       <a href="#herramientas" class="mobile-link" data-i18n="nav.tools">Herramientas</a>
+      <a href="#seguridad" class="mobile-link" data-i18n="nav.security">Seguridad</a>
       <a href="#descargar" class="mobile-link" data-i18n="nav.download">Descargar</a>
       <a href="https://www.mediafire.com/file/sgjskek9e4c2ar8/nova_ai_10.apk/file" 
-         class="btn btn-primary btn-block" 
-         target="_blank" 
-         rel="noopener"
-         data-i18n="nav.downloadBtn">
+         class="btn btn-primary btn-block" target="_blank" rel="noopener" data-i18n="nav.downloadBtn">
         Descargar APK
       </a>
     </div>
@@ -86,42 +78,39 @@
 
       <div class="container hero-content">
         <div class="badge animate-fade-up">
-          <i data-lucide="zap"></i>
-          <span data-i18n="hero.badge">Nueva generación de IA</span>
+          <i data-lucide="shield-check"></i>
+          <span data-i18n="hero.badge">IA Segura y Privada</span>
         </div>
 
         <h1 class="hero-title animate-fade-up delay-1">
           <span data-i18n="hero.title1">Inteligencia Artificial</span><br />
-          <span class="gradient-text" data-i18n="hero.title2">elegante y poderosa</span>
+          <span class="gradient-text" data-i18n="hero.title2">elegante y segura</span>
         </h1>
 
         <p class="hero-subtitle animate-fade-up delay-2" data-i18n="hero.subtitle">
-          Nova IA es tu compañera inteligente. Diseñada para ser rápida, intuitiva y visualmente impecable. Todo el poder de la IA en una experiencia premium.
+          Nova IA es tu asistente inteligente. Rápida, intuitiva y diseñada con la privacidad como prioridad. Todo el poder de la IA en una experiencia premium.
         </p>
 
         <div class="hero-actions animate-fade-up delay-3">
           <a href="https://www.mediafire.com/file/sgjskek9e4c2ar8/nova_ai_10.apk/file" 
-             class="btn btn-primary btn-lg" 
-             target="_blank" 
-             rel="noopener"
-             id="downloadBtn">
+             class="btn btn-primary btn-lg" target="_blank" rel="noopener" id="downloadBtn">
             <i data-lucide="download"></i>
             <span data-i18n="hero.download">Descargar APK</span>
           </a>
-          <a href="#funciones" class="btn btn-secondary btn-lg">
-            <i data-lucide="play"></i>
-            <span data-i18n="hero.explore">Explorar</span>
+          <a href="#herramientas" class="btn btn-secondary btn-lg">
+            <i data-lucide="layout-grid"></i>
+            <span data-i18n="hero.explore">Ver herramientas</span>
           </a>
         </div>
 
         <div class="hero-stats animate-fade-up delay-4">
           <div class="stat">
-            <span class="stat-number">10+</span>
+            <span class="stat-number">8+</span>
             <span class="stat-label" data-i18n="hero.stat1">Herramientas</span>
           </div>
           <div class="stat">
-            <span class="stat-number" data-i18n="hero.stat2num">Rápida</span>
-            <span class="stat-label" data-i18n="hero.stat2">Respuesta</span>
+            <span class="stat-number" data-i18n="hero.stat2num">Segura</span>
+            <span class="stat-label" data-i18n="hero.stat2">y Privada</span>
           </div>
           <div class="stat">
             <span class="stat-number" data-i18n="hero.stat3num">Premium</span>
@@ -137,7 +126,7 @@
         <div class="section-header">
           <span class="section-tag" data-i18n="features.tag">Funciones</span>
           <h2 class="section-title" data-i18n="features.title">Diseñada para destacar</h2>
-          <p class="section-desc" data-i18n="features.desc">Una experiencia cuidada hasta el último detalle. Minimalista, rápida y elegante.</p>
+          <p class="section-desc" data-i18n="features.desc">Una experiencia cuidada hasta el último detalle. Minimalista, rápida y segura.</p>
         </div>
 
         <div class="features-grid">
@@ -148,15 +137,15 @@
           </article>
 
           <article class="feature-card">
-            <div class="feature-icon"><i data-lucide="sparkles"></i></div>
-            <h3 data-i18n="features.card2.title">Herramientas de IA</h3>
-            <p data-i18n="features.card2.desc">Accede a un conjunto de herramientas útiles pensadas para el día a día.</p>
+            <div class="feature-icon"><i data-lucide="mic"></i></div>
+            <h3 data-i18n="features.card2.title">Modo voz</h3>
+            <p data-i18n="features.card2.desc">Habla con Nova IA y recibe respuestas de forma natural.</p>
           </article>
 
           <article class="feature-card">
-            <div class="feature-icon"><i data-lucide="palette"></i></div>
-            <h3 data-i18n="features.card3.title">Diseño premium</h3>
-            <p data-i18n="features.card3.desc">Tema oscuro elegante, animaciones suaves y una experiencia visual cuidada.</p>
+            <div class="feature-icon"><i data-lucide="shield-check"></i></div>
+            <h3 data-i18n="features.card3.title">Privacidad primero</h3>
+            <p data-i18n="features.card3.desc">Tu información se trata con cuidado. Diseño centrado en la seguridad.</p>
           </article>
 
           <article class="feature-card">
@@ -166,70 +155,115 @@
           </article>
 
           <article class="feature-card">
-            <div class="feature-icon"><i data-lucide="shield"></i></div>
-            <h3 data-i18n="features.card5.title">Privacidad primero</h3>
-            <p data-i18n="features.card5.desc">Tu información se trata con cuidado. Diseño centrado en la experiencia del usuario.</p>
+            <div class="feature-icon"><i data-lucide="zap"></i></div>
+            <h3 data-i18n="features.card5.title">Rendimiento ágil</h3>
+            <p data-i18n="features.card5.desc">Interfaz ligera y respuestas rápidas para que no pierdas el ritmo.</p>
           </article>
 
           <article class="feature-card">
-            <div class="feature-icon"><i data-lucide="zap"></i></div>
-            <h3 data-i18n="features.card6.title">Rendimiento ágil</h3>
-            <p data-i18n="features.card6.desc">Interfaz ligera y respuestas rápidas para que no pierdas el ritmo.</p>
+            <div class="feature-icon"><i data-lucide="palette"></i></div>
+            <h3 data-i18n="features.card6.title">Diseño premium</h3>
+            <p data-i18n="features.card6.desc">Tema oscuro elegante, animaciones suaves y experiencia visual cuidada.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Herramientas -->
+    <!-- Herramientas (iguales a la app) -->
     <section class="section section-alt" id="herramientas">
       <div class="container">
         <div class="section-header">
           <span class="section-tag" data-i18n="tools.tag">Herramientas</span>
-          <h2 class="section-title" data-i18n="tools.title">Potencia tu productividad</h2>
-          <p class="section-desc" data-i18n="tools.desc">Un conjunto de herramientas de IA listas para usar desde la aplicación.</p>
+          <h2 class="section-title" data-i18n="tools.title">Todo lo que necesitas</h2>
+          <p class="section-desc" data-i18n="tools.desc">Las mismas herramientas que encontrarás dentro de la aplicación.</p>
         </div>
 
-        <div class="tools-grid">
+        <div class="tools-grid real-tools">
           <div class="tool-card">
-            <div class="tool-icon"><i data-lucide="bot"></i></div>
+            <div class="tool-icon purple"><i data-lucide="message-circle"></i></div>
             <div>
-              <h4 data-i18n="tools.t1.title">Asistente de chat</h4>
+              <h4 data-i18n="tools.t1.title">Chatear</h4>
               <p data-i18n="tools.t1.desc">Conversaciones inteligentes y contextuales.</p>
             </div>
           </div>
           <div class="tool-card">
-            <div class="tool-icon"><i data-lucide="file-text"></i></div>
+            <div class="tool-icon blue"><i data-lucide="mic"></i></div>
             <div>
-              <h4 data-i18n="tools.t2.title">Escritura y resúmenes</h4>
-              <p data-i18n="tools.t2.desc">Ayuda a redactar, resumir y mejorar textos.</p>
+              <h4 data-i18n="tools.t2.title">Hablar</h4>
+              <p data-i18n="tools.t2.desc">Interactúa con Nova usando tu voz.</p>
             </div>
           </div>
           <div class="tool-card">
-            <div class="tool-icon"><i data-lucide="image"></i></div>
+            <div class="tool-icon purple"><i data-lucide="languages"></i></div>
             <div>
-              <h4 data-i18n="tools.t3.title">Ideas creativas</h4>
-              <p data-i18n="tools.t3.desc">Genera ideas, títulos y conceptos creativos.</p>
+              <h4 data-i18n="tools.t3.title">Traducir</h4>
+              <p data-i18n="tools.t3.desc">Traduce textos de forma rápida y natural.</p>
             </div>
           </div>
           <div class="tool-card">
-            <div class="tool-icon"><i data-lucide="code"></i></div>
+            <div class="tool-icon blue"><i data-lucide="file-text"></i></div>
             <div>
-              <h4 data-i18n="tools.t4.title">Ayuda con código</h4>
-              <p data-i18n="tools.t4.desc">Explicaciones y sugerencias para programadores.</p>
+              <h4 data-i18n="tools.t4.title">Resumir</h4>
+              <p data-i18n="tools.t4.desc">Resume textos largos en segundos.</p>
             </div>
           </div>
           <div class="tool-card">
-            <div class="tool-icon"><i data-lucide="languages"></i></div>
+            <div class="tool-icon purple"><i data-lucide="code"></i></div>
             <div>
-              <h4 data-i18n="tools.t5.title">Traducción</h4>
-              <p data-i18n="tools.t5.desc">Traduce textos de forma rápida y natural.</p>
+              <h4 data-i18n="tools.t5.title">Programar</h4>
+              <p data-i18n="tools.t5.desc">Ayuda con código y explicaciones.</p>
             </div>
           </div>
           <div class="tool-card">
-            <div class="tool-icon"><i data-lucide="lightbulb"></i></div>
+            <div class="tool-icon pink"><i data-lucide="pen-line"></i></div>
             <div>
-              <h4 data-i18n="tools.t6.title">Brainstorming</h4>
-              <p data-i18n="tools.t6.desc">Explora ideas y resuelve problemas creativamente.</p>
+              <h4 data-i18n="tools.t6.title">Escribir</h4>
+              <p data-i18n="tools.t6.desc">Redacta y mejora cualquier texto.</p>
+            </div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon cyan"><i data-lucide="spell-check"></i></div>
+            <div>
+              <h4 data-i18n="tools.t7.title">Corregir</h4>
+              <p data-i18n="tools.t7.desc">Corrige ortografía y gramática.</p>
+            </div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon magenta"><i data-lucide="lightbulb"></i></div>
+            <div>
+              <h4 data-i18n="tools.t8.title">Ideas</h4>
+              <p data-i18n="tools.t8.desc">Genera ideas creativas al instante.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seguridad -->
+    <section class="section" id="seguridad">
+      <div class="container">
+        <div class="security-card">
+          <div class="security-icon">
+            <i data-lucide="shield-check"></i>
+          </div>
+          <div class="security-content">
+            <h2 data-i18n="security.title">Tu privacidad es prioritaria</h2>
+            <p data-i18n="security.desc">
+              Nova IA está diseñada pensando en tu seguridad. No almacenamos conversaciones innecesarias y tratamos tus datos con el máximo cuidado. Una IA potente, pero también responsable.
+            </p>
+            <div class="security-points">
+              <div class="security-point">
+                <i data-lucide="lock"></i>
+                <span data-i18n="security.p1">Enfoque en privacidad</span>
+              </div>
+              <div class="security-point">
+                <i data-lucide="eye-off"></i>
+                <span data-i18n="security.p2">Sin seguimiento invasivo</span>
+              </div>
+              <div class="security-point">
+                <i data-lucide="shield"></i>
+                <span data-i18n="security.p3">Uso responsable de la IA</span>
+              </div>
             </div>
           </div>
         </div>
@@ -246,14 +280,11 @@
               <span data-i18n="download.badge">Disponible para Android</span>
             </div>
             <h2 data-i18n="download.title">Lleva Nova IA contigo</h2>
-            <p data-i18n="download.desc">Descarga la APK e instálala en tu dispositivo. Experiencia completa, sin complicaciones.</p>
+            <p data-i18n="download.desc">Descarga la APK e instálala en tu dispositivo. Experiencia completa, segura y sin complicaciones.</p>
             
             <div class="download-actions">
               <a href="https://www.mediafire.com/file/sgjskek9e4c2ar8/nova_ai_10.apk/file" 
-                 class="btn btn-primary btn-lg"
-                 target="_blank" 
-                 rel="noopener"
-                 id="mainDownload">
+                 class="btn btn-primary btn-lg" target="_blank" rel="noopener" id="mainDownload">
                 <i data-lucide="download"></i>
                 <span data-i18n="download.btn">Descargar APK</span>
               </a>
@@ -265,13 +296,21 @@
             <div class="phone-mockup">
               <div class="phone-screen">
                 <div class="phone-header">
-                  <div class="phone-logo">Nova IA</div>
+                  <img src="https://i.imgur.com/wzJeLBt.png" alt="Nova" class="phone-logo-img" />
+                  <div class="phone-title">Nova IA</div>
                 </div>
-                <div class="phone-chat">
-                  <div class="bubble user" data-i18n="download.chat1">Hola Nova 👋</div>
-                  <div class="bubble ai" data-i18n="download.chat2">¡Hola! ¿En qué puedo ayudarte hoy?</div>
-                  <div class="bubble user" data-i18n="download.chat3">Muéstrame tus herramientas</div>
-                  <div class="bubble ai" data-i18n="download.chat4">Claro, aquí tienes todo lo que puedo hacer…</div>
+                <div class="phone-greeting">
+                  <div class="phone-bot">🤖</div>
+                  <div>
+                    <strong data-i18n="download.chat1">Hola, Soy Nova AI</strong>
+                    <p data-i18n="download.chat2">Tu asistente de inteligencia artificial</p>
+                  </div>
+                </div>
+                <div class="phone-tools">
+                  <div class="mini-tool">💬 Chatear</div>
+                  <div class="mini-tool">🎤 Hablar</div>
+                  <div class="mini-tool">🌐 Traducir</div>
+                  <div class="mini-tool">📝 Resumir</div>
                 </div>
               </div>
             </div>
@@ -287,10 +326,10 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="#inicio" class="logo">
-            <div class="logo-icon"><i data-lucide="sparkles"></i></div>
+            <img src="https://i.imgur.com/wzJeLBt.png" alt="Nova IA" class="logo-img" />
             <span>Nova <strong>IA</strong></span>
           </a>
-          <p data-i18n="footer.tagline">Inteligencia Artificial moderna y elegante.</p>
+          <p data-i18n="footer.tagline">Inteligencia Artificial moderna, elegante y segura.</p>
         </div>
 
         <div class="footer-links">
@@ -299,6 +338,7 @@
             <a href="#inicio" data-i18n="nav.home">Inicio</a>
             <a href="#funciones" data-i18n="nav.features">Funciones</a>
             <a href="#herramientas" data-i18n="nav.tools">Herramientas</a>
+            <a href="#seguridad" data-i18n="nav.security">Seguridad</a>
             <a href="#descargar" data-i18n="nav.download">Descargar</a>
           </div>
           <div class="footer-col">
